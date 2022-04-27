@@ -1,0 +1,14 @@
+// others
+@import "./base/base";
+@import "./base/typography";
+@import "./utils/mixins";
+@import "./utils/variables";
+
+// pages
+@import "./pages/registration";
+@import "./pages/home";
+
+// components
+@import "./components/sociallogin";
+@import "./components/messagebar";
+@import "./components/chatbar";

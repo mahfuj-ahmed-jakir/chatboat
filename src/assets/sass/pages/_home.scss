@@ -1,0 +1,12 @@
+#home {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: auto;
+  @include mobileSmall() {
+    grid-template-columns: 60px auto;
+  }
+  @include mobileMedium() {
+    grid-template-columns: 60px auto;
+  }
+}

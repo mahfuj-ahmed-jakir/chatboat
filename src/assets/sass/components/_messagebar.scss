@@ -1,0 +1,1020 @@
+#messagebar {
+  border-right: 1px solid $colorOffWhite;
+  padding: 10px;
+  z-index: 99;
+  .messagebar {
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+    // Header
+    .messagesbar__header {
+      grid-column-gap: 5px;
+      display: grid;
+      grid-template-columns: auto 120px;
+      align-items: center;
+      overflow: hidden;
+      @include mobileSmall() {
+        grid-column-gap: 0;
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        overflow: visible;
+      }
+      @include mobileMedium() {
+        grid-column-gap: 0;
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        overflow: visible;
+      }
+      @include mobileBig() {
+        grid-column-gap: 0;
+        display: block;
+        grid-template-columns: auto;
+      }
+      .messagesbar__header__user {
+        display: grid;
+        grid-template-columns: 50px auto;
+        img {
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+        .messagesbar__header__user__details {
+          margin-left: 8px;
+          h1 {
+            margin-top: 5px;
+            font-size: 18px;
+            @include mobileSmall() {
+              display: none;
+            }
+            @include mobileMedium() {
+              display: none;
+            }
+          }
+        }
+      }
+      .messagesbar__header__more {
+        text-align: right;
+        @include mobileSmall() {
+          display: flex;
+          flex-wrap: wrap;
+          width: 40px;
+          margin-top: 5px;
+        }
+        @include mobileMedium() {
+          display: flex;
+          flex-wrap: wrap;
+          width: 40px;
+          margin-top: 5px;
+        }
+        @include mobileBig() {
+          text-align: left;
+          margin-top: 5px;
+        }
+        button {
+          color: $colorOffBlack;
+          background: none;
+          border: none;
+          font-size: 20px;
+          margin: 2px;
+          cursor: pointer;
+          height: 35px;
+          width: 35px;
+          line-height: 40px;
+          background: #f1f1f1;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          transition: all 0.2 ease;
+          -webkit-transition: all linear 0.2s;
+          -moz-transition: all linear 0.2s;
+          -ms-transition: all linear 0.2s;
+          -o-transition: all linear 0.2s;
+          &:hover {
+            background: $colorOffWhite;
+          }
+        }
+      }
+    }
+
+    // Search Bar
+    .searchbar {
+      margin: 15px 0;
+      height: 35px;
+      display: grid;
+      grid-template-columns: 35px auto;
+      align-items: center;
+      border-radius: 50px;
+      background: $colorOffWhite;
+      overflow: hidden;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      @include mobileSmall() {
+        height: 40px;
+        width: 40px;
+        justify-content: center;
+      }
+      @include mobileMedium() {
+        height: 40px;
+        width: 40px;
+        justify-content: center;
+      }
+      svg {
+        margin-left: 8px;
+        font-size: 20px;
+        color: #999;
+      }
+      input {
+        background: none;
+        border: none;
+        outline: none;
+        margin-right: 15px;
+        font-size: 15px;
+        min-width: 0px;
+        @include mobileSmall() {
+          display: none;
+        }
+        @include mobileMedium() {
+          display: none;
+        }
+      }
+    }
+
+    // Group Input
+    #group_input {
+      .searchbar {
+        margin: 15px 0 8px;
+        height: 35px;
+        display: grid;
+        grid-template-columns: 35px auto;
+        align-items: center;
+        border-radius: 50px;
+        background: $colorOffWhite;
+        overflow: hidden;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        @include mobileSmall() {
+          height: 40px;
+          width: 40px;
+          justify-content: center;
+        }
+        @include mobileMedium() {
+          height: 40px;
+          width: 40px;
+          justify-content: center;
+        }
+        svg {
+          margin-left: 8px;
+          font-size: 20px;
+          color: #999;
+        }
+        input {
+          background: none;
+          border: none;
+          outline: none;
+          margin-right: 15px;
+          font-size: 15px;
+          min-width: 0px;
+          @include mobileSmall() {
+            display: none;
+          }
+          @include mobileMedium() {
+            display: none;
+          }
+        }
+      }
+      button {
+        border: none;
+        padding: 7px;
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100%;
+        background: $colorBlue;
+        color: $colorWhite;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+      }
+      @include mobileSmall() {
+        display: none;
+      }
+      @include mobileMedium() {
+        display: none;
+      }
+    }
+
+    #messagesbar_scroll {
+      height: 480px;
+      overflow-y: auto;
+      @include mobileSmall() {
+        height: 360px;
+      }
+      @include mobileMedium() {
+        height: 360px;
+      }
+
+      // Profile setting
+      #profile {
+        button {
+          padding: 5px 10px;
+          width: 100%;
+          text-align: center;
+          color: $colorWhite;
+          font-size: 16px;
+          background: crimson;
+          border: none;
+          margin-top: 10px;
+          cursor: pointer;
+          border-radius: $radiusCommon;
+          -webkit-border-radius: $radiusCommon;
+          -moz-border-radius: $radiusCommon;
+          -ms-border-radius: $radiusCommon;
+          -o-border-radius: $radiusCommon;
+          &:nth-child(2) {
+            background: #222;
+            margin-top: 20px;
+          }
+        }
+        min-width: 40px;
+        text-align: center;
+        @include mobileSmall() {
+          display: none;
+        }
+        @include mobileMedium() {
+          display: none;
+        }
+        .profile {
+          margin-top: 100px;
+          padding: 10px;
+          background: $colorOffWhite;
+          border-radius: $radiusCommon;
+          -webkit-border-radius: $radiusCommon;
+          -moz-border-radius: $radiusCommon;
+          -ms-border-radius: $radiusCommon;
+          -o-border-radius: $radiusCommon;
+          border: 2px solid #999;
+          position: relative;
+          text-align: center;
+          @include mobileBig() {
+            margin-top: 60px;
+          }
+          .profile_img {
+            height: 150px;
+            width: 150px;
+            overflow: hidden;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: -75px;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            border: 5px solid $colorWhite;
+            .proileChangeIcon {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              background: transparent;
+              width: 100%;
+              height: 100%;
+              z-index: 99;
+              overflow: hidden;
+              input[type="file"] {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                opacity: 0;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                min-width: 40px;
+                cursor: pointer;
+              }
+            }
+            @include mobileBig() {
+              height: 80px;
+              width: 80px;
+              top: -40px;
+              border: 2px solid $colorWhite;
+            }
+            img {
+              width: 100%;
+              height: auto;
+              cursor: pointer;
+            }
+          }
+          .profile_details {
+            margin-top: 70px;
+            text-align: center;
+            @include mobileBig() {
+              margin-top: 35px;
+            }
+            button {
+              padding: 5px 10px;
+              width: 100%;
+              text-align: center;
+              color: $colorWhite;
+              font-size: 16px;
+              background: $colorBlue;
+              border: none;
+              cursor: pointer;
+              margin: 0 !important;
+              border-radius: $radiusCommon;
+              -webkit-border-radius: $radiusCommon;
+              -moz-border-radius: $radiusCommon;
+              -ms-border-radius: $radiusCommon;
+              -o-border-radius: $radiusCommon;
+            }
+            .profileErr {
+              margin-top: 20px;
+              color: crimson;
+              width: 100%;
+              text-align: left;
+              margin-bottom: 2px;
+            }
+            .profile_details_name {
+              display: flex;
+              justify-content: center;
+              h1 {
+                font-size: 16px;
+                @include mobileBig() {
+                  font-size: 9px;
+                }
+              }
+              svg {
+                font-size: 30px;
+                margin-left: 10px;
+                color: $colorBlue;
+                cursor: pointer;
+                @include mobileBig() {
+                  font-size: 14px;
+                }
+              }
+              input {
+                background: none;
+                outline: none;
+                border: 1px solid #777;
+                padding: 5px 10px;
+                border-radius: $radiusCommon;
+                -webkit-border-radius: $radiusCommon;
+                -moz-border-radius: $radiusCommon;
+                -ms-border-radius: $radiusCommon;
+                -o-border-radius: $radiusCommon;
+                font-size: 16px;
+                min-width: 0;
+                font-weight: 700;
+                text-align: center;
+                @include mobileBig() {
+                  font-size: 9px;
+                  padding: 3px 6px;
+                }
+              }
+            }
+            .profile_details_info {
+              display: flex;
+              justify-content: center;
+              margin-top: 10px;
+              p {
+                font-size: 14px;
+                @include mobileBig() {
+                  font-size: 8px;
+                }
+              }
+              svg {
+                font-size: 25px;
+                margin-right: 5px;
+                color: $colorBlue;
+                @include mobileBig() {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Friends Bar
+      #friendsbar {
+        p {
+          margin-bottom: 2px;
+          @include mobileSmall() {
+            font-size: 10px;
+          }
+          @include mobileMedium() {
+            font-size: 10px;
+          }
+        }
+        #story {
+          background: $colorOffWhite;
+          padding: 5px;
+          overflow-x: auto;
+          border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          -o-border-radius: 4px;
+          cursor: pointer;
+          @include mobileSmall() {
+            background: none;
+            padding: 0;
+            overflow: hidden;
+            width: 40px;
+          }
+          @include mobileMedium() {
+            background: none;
+            padding: 0;
+            overflow: hidden;
+            width: 40px;
+          }
+          .story {
+            display: flex;
+            background: $colorOffWhite;
+            overflow-x: auto;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            @include mobileSmall() {
+              background: none;
+              overflow: hidden;
+              width: 40px;
+              overflow: hidden;
+            }
+            @include mobileMedium() {
+              padding-bottom: 0;
+              background: none;
+              overflow: hidden;
+              width: 40px;
+              overflow: hidden;
+            }
+            .story_add {
+              overflow: hidden;
+              position: relative;
+              height: 40px;
+              min-width: 40px;
+              background: $colorBlue;
+              margin-right: 3px;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+              @include mobileSmall() {
+                height: 38px;
+                min-width: 38px;
+              }
+              @include mobileMedium() {
+                height: 38px;
+                min-width: 38px;
+              }
+              svg {
+                color: $colorOffWhite;
+                font-size: 30px;
+              }
+              .storyAddInput {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 40px;
+                height: 25px;
+                overflow: hidden;
+                cursor: pointer;
+                opacity: 0;
+                transform: scale(2);
+                -webkit-transform: scale(2);
+                -moz-transform: scale(2);
+                -ms-transform: scale(2);
+                -o-transform: scale(2);
+                input {
+                  cursor: pointer;
+                  position: absolute;
+                  width: 40px;
+                  height: 40px;
+                  left: 0;
+                  top: 0;
+                }
+              }
+            }
+            .story_img {
+              height: 40px;
+              min-width: 40px;
+              background: $colorBlue;
+              margin: 0 3px;
+              overflow: hidden;
+              cursor: pointer;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+              border: 2px solid $colorBlue;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+              @include mobileSmall {
+                display: none;
+              }
+              @include mobileMedium {
+                display: none;
+              }
+            }
+          }
+        }
+        #friends_list {
+          margin: 10px 0;
+          p {
+            margin-bottom: 2px;
+            @include mobileSmall() {
+              font-size: 10px;
+            }
+            @include mobileMedium() {
+              font-size: 10px;
+            }
+          }
+          .friend {
+            cursor: pointer;
+            overflow: hidden;
+            padding: 5px;
+            display: grid;
+            grid-template-columns: 58px auto;
+            align-items: center;
+            border-radius: $radiusCommon;
+            -webkit-border-radius: $radiusCommon;
+            -moz-border-radius: $radiusCommon;
+            -ms-border-radius: $radiusCommon;
+            -o-border-radius: $radiusCommon;
+            @include mobileMedium() {
+              padding: 0;
+              height: 40px;
+              width: 40px;
+              margin: 5px 0;
+              background: none;
+              grid-template-columns: 40px auto;
+              align-items: flex-start;
+            }
+            @include mobileSmall() {
+              padding: 0;
+              height: 40px;
+              width: 40px;
+              margin: 5px 0;
+              background: none;
+              grid-template-columns: 40px auto;
+              align-items: flex-start;
+            }
+            @include mobileBig() {
+              background: none;
+              margin: 5px 0;
+            }
+            .friend__img {
+              margin-right: 8px;
+              width: 50px;
+              min-width: 50px;
+              height: 50px;
+              overflow: hidden;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+              @include mobileMedium() {
+                width: 40px;
+                min-width: 40px;
+                height: 40px;
+                margin-right: 0;
+                border: 1px solid $colorBlue;
+              }
+              @include mobileSmall() {
+                width: 40px;
+                min-width: 40px;
+                height: 40px;
+                margin-right: 0;
+                border: 1px solid $colorBlue;
+              }
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+            .friend__details {
+              h1 {
+                font-size: 16px;
+                @include mobileBig() {
+                  font-size: 12px;
+                }
+              }
+              p {
+                font-size: 14px;
+                @include mobileBig() {
+                  font-size: 10px;
+                }
+              }
+              @include mobileSmall() {
+                display: none;
+              }
+              @include mobileMedium() {
+                display: none;
+              }
+            }
+            &:hover {
+              background: $colorOffWhite;
+            }
+          }
+        }
+      }
+
+      // Groups
+      #friends_list {
+        margin: 10px 0;
+        p {
+          margin-bottom: 2px;
+          @include mobileSmall() {
+            font-size: 10px;
+          }
+          @include mobileMedium() {
+            font-size: 10px;
+          }
+        }
+        .friend {
+          cursor: pointer;
+          overflow: hidden;
+          padding: 5px;
+          display: grid;
+          grid-template-columns: 58px auto 25px;
+          align-items: center;
+          border-radius: $radiusCommon;
+          -webkit-border-radius: $radiusCommon;
+          -moz-border-radius: $radiusCommon;
+          -ms-border-radius: $radiusCommon;
+          -o-border-radius: $radiusCommon;
+          @include mobileMedium() {
+            padding: 0;
+            height: 40px;
+            width: 40px;
+            margin: 0;
+            background: none;
+            grid-template-columns: 40px auto 25px;
+            align-items: flex-start;
+          }
+          @include mobileSmall() {
+            padding: 0;
+            height: 40px;
+            width: 40px;
+            margin: 0;
+            background: none;
+            grid-template-columns: 40px auto 25px;
+            align-items: flex-start;
+          }
+          @include mobileBig() {
+            background: $colorOffWhite;
+            margin: 5px 0;
+          }
+          .friend__img {
+            margin-right: 8px;
+            width: 50px;
+            min-width: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            @include mobileMedium() {
+              width: 40px;
+              min-width: 40px;
+              height: 40px;
+              margin-right: 0;
+              border: 1px solid $colorBlue;
+            }
+            @include mobileSmall() {
+              width: 40px;
+              min-width: 40px;
+              height: 40px;
+              margin-right: 0;
+              border: 1px solid $colorBlue;
+            }
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          .friend__details {
+            h1 {
+              font-size: 16px;
+              @include mobileBig() {
+                font-size: 12px;
+              }
+            }
+            p {
+              font-size: 14px;
+              @include mobileBig() {
+                font-size: 10px;
+              }
+            }
+            @include mobileSmall() {
+              display: none;
+            }
+            @include mobileMedium() {
+              display: none;
+            }
+          }
+          .friends_add_btn {
+            button {
+              height: 25px;
+              width: 25px;
+              background: #777;
+              font-size: 20px;
+              color: $colorWhite;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: none;
+              cursor: pointer;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+            }
+            @include mobileSmall() {
+              display: none;
+            }
+            @include mobileMedium() {
+              display: none;
+            }
+          }
+          &:hover {
+            background: $colorOffWhite;
+          }
+        }
+      }
+
+      // Friends Added Bar
+      #friends_add {
+        p {
+          margin: 10px 0 2px;
+          @include mobileSmall() {
+            font-size: 10px;
+          }
+          @include mobileMedium() {
+            font-size: 10px;
+          }
+        }
+        .friends_add {
+          padding: 5px;
+          display: grid;
+          grid-template-columns: 40px auto 25px;
+          grid-column-gap: 8px;
+          align-items: center;
+          cursor: pointer;
+          transition: all linear 0.2s;
+          -webkit-transition: all linear 0.2s;
+          -moz-transition: all linear 0.2s;
+          -ms-transition: all linear 0.2s;
+          -o-transition: all linear 0.2s;
+          border-radius: $radiusCommon;
+          -webkit-border-radius: $radiusCommon;
+          -moz-border-radius: $radiusCommon;
+          -ms-border-radius: $radiusCommon;
+          -o-border-radius: $radiusCommon;
+          &:hover {
+            background: $colorOffWhite;
+          }
+          @include mobileSmall() {
+            padding: 0;
+            margin: 5px 0;
+            grid-template-columns: 40px;
+            grid-column-gap: 0;
+            width: 40px;
+            height: 40px;
+          }
+          @include mobileMedium() {
+            padding: 0;
+            margin: 5px 0;
+            grid-template-columns: 40px;
+            grid-column-gap: 0;
+            width: 40px;
+            height: 40px;
+          }
+          .friends_add_img {
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            img {
+              width: 100%;
+              height: auto;
+            }
+            @include mobileSmall() {
+              border: 1px solid $colorBlue;
+            }
+            @include mobileMedium() {
+              border: 1px solid $colorBlue;
+            }
+          }
+          .friends_add_name {
+            h1 {
+              font-size: 15px;
+              @include mobileBig() {
+                font-size: 11px;
+              }
+            }
+            p {
+              font-size: 12px;
+              margin: 0;
+              @include mobileBig() {
+                font-size: 10px;
+              }
+            }
+            @include mobileSmall() {
+              display: none;
+            }
+            @include mobileMedium() {
+              display: none;
+            }
+          }
+          .friends_add_btn {
+            button {
+              height: 25px;
+              width: 25px;
+              background: #2c9f45;
+              font-size: 20px;
+              color: $colorWhite;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: none;
+              cursor: pointer;
+              border-radius: 2px;
+              -webkit-border-radius: 2px;
+              -moz-border-radius: 2px;
+              -ms-border-radius: 2px;
+              -o-border-radius: 2px;
+            }
+            @include mobileSmall() {
+              display: none;
+            }
+            @include mobileMedium() {
+              display: none;
+            }
+          }
+        }
+      }
+
+      // Friends Req Bar
+      #friends_req {
+        p {
+          margin-bottom: 2px;
+          @include mobileSmall() {
+            font-size: 10px;
+          }
+          @include mobileMedium() {
+            font-size: 10px;
+          }
+        }
+        @include mobileSmall() {
+          width: 40px;
+          overflow: hidden;
+        }
+        @include mobileMedium() {
+          width: 40px;
+          overflow: hidden;
+        }
+        .friends_req {
+          padding: 5px;
+          display: grid;
+          grid-template-columns: 40px auto 60px;
+          grid-column-gap: 8px;
+          align-items: center;
+          cursor: pointer;
+          transition: all linear 0.2s;
+          -webkit-transition: all linear 0.2s;
+          -moz-transition: all linear 0.2s;
+          -ms-transition: all linear 0.2s;
+          -o-transition: all linear 0.2s;
+          border-radius: $radiusCommon;
+          -webkit-border-radius: $radiusCommon;
+          -moz-border-radius: $radiusCommon;
+          -ms-border-radius: $radiusCommon;
+          -o-border-radius: $radiusCommon;
+          &:hover {
+            background: $colorOffWhite;
+          }
+          @include mobileSmall() {
+            grid-template-columns: 40px;
+            grid-column-gap: 0;
+            padding: 0;
+            margin: 5px 0;
+          }
+          @include mobileMedium() {
+            grid-template-columns: 40px;
+            grid-column-gap: 0;
+            padding: 0;
+            margin: 5px 0;
+          }
+          .friends_req_img {
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            img {
+              width: 100%;
+              height: auto;
+            }
+            @include mobileSmall() {
+              border: 1px solid $colorBlue;
+            }
+            @include mobileMedium() {
+              border: 1px solid $colorBlue;
+            }
+          }
+          .friends_req_name {
+            min-width: 0;
+            h1 {
+              font-size: 15px;
+              @include mobileBig() {
+                font-size: 11px;
+              }
+            }
+            @include mobileSmall() {
+              display: none;
+            }
+            @include mobileMedium() {
+              display: none;
+            }
+          }
+          .friends_req_btn {
+            display: flex;
+            button {
+              height: 25px;
+              width: 25px;
+              background: $colorBlue;
+              font-size: 20px;
+              color: $colorWhite;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: none;
+              cursor: pointer;
+              border-radius: 2px;
+              -webkit-border-radius: 2px;
+              -moz-border-radius: 2px;
+              -ms-border-radius: 2px;
+              -o-border-radius: 2px;
+              margin-left: 5px;
+              &:nth-child(2) {
+                background: crimson;
+              }
+            }
+            @include mobileSmall() {
+              display: none;
+            }
+            @include mobileMedium() {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

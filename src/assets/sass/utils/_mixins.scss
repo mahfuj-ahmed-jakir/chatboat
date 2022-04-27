@@ -1,0 +1,33 @@
+// div mixin
+@mixin divMixin($width, $height, $background) {
+  width: $width;
+  height: $height;
+  background: $background;
+}
+
+// font family mixin
+@mixin fontFamilyMixin($fontFamily, $size, $weight, $color) {
+  font-family: $fontFamily;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+// responsive
+@mixin mobileSmall() {
+  @media (min-width: 250px) and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin mobileMedium() {
+  @media (min-width: 401px) and (max-width: 650px) {
+    @content;
+  }
+}
+
+@mixin mobileBig() {
+  @media (min-width: 651px) and (max-width: 1050px) {
+    @content;
+  }
+}

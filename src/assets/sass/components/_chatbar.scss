@@ -1,0 +1,241 @@
+#chatbar {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 70px auto 60px;
+  #header {
+    -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: auto 165px;
+    grid-column-gap: 10px;
+    align-items: center;
+    overflow: hidden;
+    .header__user {
+      display: grid;
+      grid-template-columns: 60px auto;
+      @include mobileMedium() {
+        grid-template-columns: 40px auto;
+      }
+      img {
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        @include mobileMedium() {
+          width: 35px;
+          height: 35px;
+          margin-left: 5px;
+        }
+      }
+      .header__user__details {
+        margin-left: 8px;
+        h1 {
+          font-size: 16px;
+          @include mobileMedium() {
+            font-size: 12px;
+          }
+        }
+        p {
+          font-size: 14px;
+          @include mobileMedium() {
+            font-size: 10px;
+          }
+        }
+        @include mobileSmall() {
+          display: none;
+        }
+      }
+    }
+    .header__more {
+      text-align: right;
+      button {
+        color: $colorBlue;
+        background: none;
+        border: none;
+        font-size: 25px;
+        margin: 5px;
+        cursor: pointer;
+        height: 45px;
+        width: 45px;
+        line-height: 54px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all 0.2 ease;
+        -webkit-transition: all linear 0.2s;
+        -moz-transition: all linear 0.2s;
+        -ms-transition: all linear 0.2s;
+        -o-transition: all linear 0.2s;
+        &:hover {
+          background: $colorOffWhite;
+        }
+      }
+    }
+  }
+  #messages {
+    background: none;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    .messages {
+      .messages_box {
+        margin-top: 8px;
+        position: relative;
+        margin-bottom: 25px;
+        h6 {
+          position: absolute;
+          font-weight: 400;
+        }
+        .messages__text {
+          width: 100%;
+          display: flex;
+          justify-content: start;
+          margin-right: auto;
+          img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+          }
+          p {
+            margin-left: 8px;
+            padding: 5px 10px;
+            background: $colorOffWhite;
+            font-size: 15px;
+            text-align: left;
+            border-radius: $radiusCommon;
+            -webkit-border-radius: $radiusCommon;
+            -moz-border-radius: $radiusCommon;
+            -ms-border-radius: $radiusCommon;
+            -o-border-radius: $radiusCommon;
+          }
+          .chat_img {
+            width: 50%;
+            height: auto;
+            margin-left: 8px;
+            border-radius: $radiusCommon;
+            -webkit-border-radius: $radiusCommon;
+            -moz-border-radius: $radiusCommon;
+            -ms-border-radius: $radiusCommon;
+            -o-border-radius: $radiusCommon;
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    color: #fff;
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    align-items: center;
+    .footer__files {
+      margin: 0 5px;
+      position: relative;
+      button {
+        height: 35px;
+        width: 35px;
+        border: none;
+        color: $colorIcon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: none;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all linear 0.2s;
+        -webkit-transition: all linear 0.2s;
+        -moz-transition: all linear 0.2s;
+        -ms-transition: all linear 0.2s;
+        -o-transition: all linear 0.2s;
+        &:hover {
+          background: $colorOffWhite;
+        }
+        svg {
+          font-size: 20px;
+        }
+      }
+      .footer_file {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        opacity: 0;
+        cursor: pointer;
+        z-index: 1;
+        input{
+          max-width: 150px;
+        }
+      }
+    }
+    .footer__input {
+      background: $colorOffWhite;
+      height: 35px;
+      display: grid;
+      z-index: 99;
+      align-items: center;
+      grid-template-columns: auto;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      input {
+        border: none;
+        background: transparent;
+        outline: none;
+        margin: 0 15px;
+        font-size: 15px;
+        min-width: 50px;
+      }
+    }
+    .footer__emoji {
+      margin: 0 5px;
+      button {
+        height: 35px;
+        width: 35px;
+        border: none;
+        color: $colorIcon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: none;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all linear 0.2s;
+        -webkit-transition: all linear 0.2s;
+        -moz-transition: all linear 0.2s;
+        -ms-transition: all linear 0.2s;
+        -o-transition: all linear 0.2s;
+        &:hover {
+          background: $colorOffWhite;
+        }
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

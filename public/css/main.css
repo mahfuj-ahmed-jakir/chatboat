@@ -1,0 +1,2082 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+p,
+h1,
+h2,
+h3,
+h5,
+h6,
+label,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+#login {
+  background: #e5e5e5;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #login .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #login .container {
+    width: 100%;
+  }
+}
+
+#login .container .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#login .container .login .login__left {
+  width: 60%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#login .container .login .login__left img {
+  width: 60%;
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #login .container .login .login__left {
+    display: none;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #login .container .login .login__left {
+    display: none;
+  }
+}
+
+#login .container .login .login__right {
+  width: 40%;
+  height: 100vh;
+  padding: 30px 0;
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #login .container .login .login__right {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #login .container .login .login__right {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+#login .container .login .login__right .login__right__con {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 25px;
+  text-align: left;
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #login .container .login .login__right .login__right__con {
+    padding: 15px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #login .container .login .login__right .login__right__con {
+    padding: 15px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+}
+
+#login .container .login .login__right .login__right__con h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 135.5%;
+}
+
+#login .container .login .login__right .login__right__con h1 span {
+  font-weight: 700;
+  color: #6358dc;
+}
+
+#login .container .login .login__right .login__right__con p {
+  font-size: 16px;
+  color: #2f2f2f;
+  width: 100%;
+  text-align: center;
+}
+
+#login .container .login .login__right .login__right__con form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  background: #e5e5e5;
+  border: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#login .container .login .login__right .login__right__con form input::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+#login .container .login .login__right .login__right__con form input:-ms-input-placeholder {
+  font-weight: 400;
+}
+
+#login .container .login .login__right .login__right__con form input::-ms-input-placeholder {
+  font-weight: 400;
+}
+
+#login .container .login .login__right .login__right__con form input::placeholder {
+  font-weight: 400;
+}
+
+#login .container .login .login__right .login__right__con form .login_rem_forgot {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #login .container .login .login__right .login__right__con form .login_rem_forgot {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+#login .container .login .login__right .login__right__con form .login_rem_forgot p {
+  font-weight: 600;
+  color: crimson;
+  width: 50%;
+  text-align: left;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #login .container .login .login__right .login__right__con form .login_rem_forgot p {
+    width: 100%;
+  }
+}
+
+#login .container .login .login__right .login__right__con form .login_rem_forgot a {
+  width: 50%;
+  text-align: right;
+  color: #6358dc;
+  cursor: pointer;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #login .container .login .login__right .login__right__con form .login_rem_forgot a {
+    width: 100%;
+  }
+}
+
+#login .container .login .login__right .login__right__con form button {
+  color: #ffffff;
+  font-size: 16px;
+  background: #6358dc;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  margin: 15px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#login .container .login .login__right .login__right__con p a {
+  color: #6358dc;
+}
+
+#home {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #home {
+    -ms-grid-columns: 60px auto;
+        grid-template-columns: 60px auto;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #home {
+    -ms-grid-columns: 60px auto;
+        grid-template-columns: 60px auto;
+  }
+}
+
+#social_login button {
+  margin: 15px 0;
+  background: #ffffff;
+  color: #2f2f2f;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.11);
+  font-size: 16px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#social_login button svg {
+  font-size: 25px;
+}
+
+#social_login button svg:last-child {
+  color: #6358dc;
+}
+
+#messagebar {
+  border-right: 1px solid #e5e5e5;
+  padding: 10px;
+  z-index: 99;
+}
+
+#messagebar .messagebar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+}
+
+#messagebar .messagebar .messagesbar__header {
+  grid-column-gap: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 120px;
+      grid-template-columns: auto 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar .messagesbar__header {
+    grid-column-gap: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar .messagesbar__header {
+    grid-column-gap: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar .messagesbar__header {
+    grid-column-gap: 0;
+    display: block;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+#messagebar .messagebar .messagesbar__header .messagesbar__header__user {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px auto;
+      grid-template-columns: 50px auto;
+}
+
+#messagebar .messagebar .messagesbar__header .messagesbar__header__user img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#messagebar .messagebar .messagesbar__header .messagesbar__header__user .messagesbar__header__user__details {
+  margin-left: 8px;
+}
+
+#messagebar .messagebar .messagesbar__header .messagesbar__header__user .messagesbar__header__user__details h1 {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar .messagesbar__header .messagesbar__header__user .messagesbar__header__user__details h1 {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar .messagesbar__header .messagesbar__header__user .messagesbar__header__user__details h1 {
+    display: none;
+  }
+}
+
+#messagebar .messagebar .messagesbar__header .messagesbar__header__more {
+  text-align: right;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar .messagesbar__header .messagesbar__header__more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 40px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar .messagesbar__header .messagesbar__header__more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 40px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar .messagesbar__header .messagesbar__header__more {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+
+#messagebar .messagebar .messagesbar__header .messagesbar__header__more button {
+  color: #2f2f2f;
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin: 2px;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  line-height: 40px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: all 0.2 ease;
+  transition: all 0.2 ease;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#messagebar .messagebar .messagesbar__header .messagesbar__header__more button:hover {
+  background: #e5e5e5;
+}
+
+#messagebar .messagebar .searchbar {
+  margin: 15px 0;
+  height: 35px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35px auto;
+      grid-template-columns: 35px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  background: #e5e5e5;
+  overflow: hidden;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar .searchbar {
+    height: 40px;
+    width: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar .searchbar {
+    height: 40px;
+    width: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#messagebar .messagebar .searchbar svg {
+  margin-left: 8px;
+  font-size: 20px;
+  color: #999;
+}
+
+#messagebar .messagebar .searchbar input {
+  background: none;
+  border: none;
+  outline: none;
+  margin-right: 15px;
+  font-size: 15px;
+  min-width: 0px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar .searchbar input {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar .searchbar input {
+    display: none;
+  }
+}
+
+#messagebar .messagebar #group_input .searchbar {
+  margin: 15px 0 8px;
+  height: 35px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35px auto;
+      grid-template-columns: 35px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  background: #e5e5e5;
+  overflow: hidden;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #group_input .searchbar {
+    height: 40px;
+    width: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #group_input .searchbar {
+    height: 40px;
+    width: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#messagebar .messagebar #group_input .searchbar svg {
+  margin-left: 8px;
+  font-size: 20px;
+  color: #999;
+}
+
+#messagebar .messagebar #group_input .searchbar input {
+  background: none;
+  border: none;
+  outline: none;
+  margin-right: 15px;
+  font-size: 15px;
+  min-width: 0px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #group_input .searchbar input {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #group_input .searchbar input {
+    display: none;
+  }
+}
+
+#messagebar .messagebar #group_input button {
+  border: none;
+  padding: 7px;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+  background: #6358dc;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #group_input {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #group_input {
+    display: none;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll {
+  height: 480px;
+  overflow-y: auto;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll {
+    height: 360px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll {
+    height: 360px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile {
+  min-width: 40px;
+  text-align: center;
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile button {
+  padding: 5px 10px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  background: crimson;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile button:nth-child(2) {
+  background: #222;
+  margin-top: 20px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #profile {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #profile {
+    display: none;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile {
+  margin-top: 100px;
+  padding: 10px;
+  background: #e5e5e5;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 2px solid #999;
+  position: relative;
+  text-align: center;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #profile .profile {
+    margin-top: 60px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_img {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: -75px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border: 5px solid #ffffff;
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_img .proileChangeIcon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow: hidden;
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_img .proileChangeIcon input[type="file"] {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  min-width: 40px;
+  cursor: pointer;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #profile .profile .profile_img {
+    height: 80px;
+    width: 80px;
+    top: -40px;
+    border: 2px solid #ffffff;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_img img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details {
+  margin-top: 70px;
+  text-align: center;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details {
+    margin-top: 35px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details button {
+  padding: 5px 10px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  background: #6358dc;
+  border: none;
+  cursor: pointer;
+  margin: 0 !important;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profileErr {
+  margin-top: 20px;
+  color: crimson;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profile_details_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profile_details_name h1 {
+  font-size: 16px;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profile_details_name h1 {
+    font-size: 9px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profile_details_name svg {
+  font-size: 30px;
+  margin-left: 10px;
+  color: #6358dc;
+  cursor: pointer;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profile_details_name svg {
+    font-size: 14px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profile_details_name input {
+  background: none;
+  outline: none;
+  border: 1px solid #777;
+  padding: 5px 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 16px;
+  min-width: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profile_details_name input {
+    font-size: 9px;
+    padding: 3px 6px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profile_details_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profile_details_info p {
+  font-size: 14px;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profile_details_info p {
+    font-size: 8px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profile_details_info svg {
+  font-size: 25px;
+  margin-right: 5px;
+  color: #6358dc;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #profile .profile .profile_details .profile_details_info svg {
+    font-size: 12px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar p {
+  margin-bottom: 2px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar p {
+    font-size: 10px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #story {
+  background: #e5e5e5;
+  padding: 5px;
+  overflow-x: auto;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #story {
+    background: none;
+    padding: 0;
+    overflow: hidden;
+    width: 40px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #story {
+    background: none;
+    padding: 0;
+    overflow: hidden;
+    width: 40px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #story .story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #e5e5e5;
+  overflow-x: auto;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #story .story {
+    background: none;
+    overflow: hidden;
+    width: 40px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #story .story {
+    padding-bottom: 0;
+    background: none;
+    overflow: hidden;
+    width: 40px;
+    overflow: hidden;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #story .story .story_add {
+  overflow: hidden;
+  position: relative;
+  height: 40px;
+  min-width: 40px;
+  background: #6358dc;
+  margin-right: 3px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #story .story .story_add {
+    height: 38px;
+    min-width: 38px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #story .story .story_add {
+    height: 38px;
+    min-width: 38px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #story .story .story_add svg {
+  color: #e5e5e5;
+  font-size: 30px;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #story .story .story_add .storyAddInput {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #story .story .story_add .storyAddInput input {
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #story .story .story_img {
+  height: 40px;
+  min-width: 40px;
+  background: #6358dc;
+  margin: 0 3px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid #6358dc;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #story .story .story_img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #story .story .story_img {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #story .story .story_img {
+    display: none;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list {
+  margin: 10px 0;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list p {
+  margin-bottom: 2px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list p {
+    font-size: 10px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend {
+  cursor: pointer;
+  overflow: hidden;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 58px auto;
+      grid-template-columns: 58px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend {
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    margin: 5px 0;
+    background: none;
+    -ms-grid-columns: 40px auto;
+        grid-template-columns: 40px auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend {
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    margin: 5px 0;
+    background: none;
+    -ms-grid-columns: 40px auto;
+        grid-template-columns: 40px auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend {
+    background: none;
+    margin: 5px 0;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend .friend__img {
+  margin-right: 8px;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend .friend__img {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    margin-right: 0;
+    border: 1px solid #6358dc;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend .friend__img {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    margin-right: 0;
+    border: 1px solid #6358dc;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend .friend__img img {
+  width: 100%;
+  height: auto;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend .friend__details h1 {
+  font-size: 16px;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend .friend__details h1 {
+    font-size: 12px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend .friend__details p {
+  font-size: 14px;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend .friend__details p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend .friend__details {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend .friend__details {
+    display: none;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friendsbar #friends_list .friend:hover {
+  background: #e5e5e5;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_list {
+  margin: 10px 0;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_list p {
+  margin-bottom: 2px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list p {
+    font-size: 10px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_list .friend {
+  cursor: pointer;
+  overflow: hidden;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 58px auto 25px;
+      grid-template-columns: 58px auto 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list .friend {
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    background: none;
+    -ms-grid-columns: 40px auto 25px;
+        grid-template-columns: 40px auto 25px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list .friend {
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    background: none;
+    -ms-grid-columns: 40px auto 25px;
+        grid-template-columns: 40px auto 25px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list .friend {
+    background: #e5e5e5;
+    margin: 5px 0;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_list .friend .friend__img {
+  margin-right: 8px;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list .friend .friend__img {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    margin-right: 0;
+    border: 1px solid #6358dc;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list .friend .friend__img {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    margin-right: 0;
+    border: 1px solid #6358dc;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_list .friend .friend__img img {
+  width: 100%;
+  height: auto;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_list .friend .friend__details h1 {
+  font-size: 16px;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list .friend .friend__details h1 {
+    font-size: 12px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_list .friend .friend__details p {
+  font-size: 14px;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list .friend .friend__details p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list .friend .friend__details {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list .friend .friend__details {
+    display: none;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_list .friend .friends_add_btn button {
+  height: 25px;
+  width: 25px;
+  background: #777;
+  font-size: 20px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list .friend .friends_add_btn {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_list .friend .friends_add_btn {
+    display: none;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_list .friend:hover {
+  background: #e5e5e5;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_add p {
+  margin: 10px 0 2px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_add p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_add p {
+    font-size: 10px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_add .friends_add {
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto 25px;
+      grid-template-columns: 40px auto 25px;
+  grid-column-gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_add .friends_add:hover {
+  background: #e5e5e5;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_add .friends_add {
+    padding: 0;
+    margin: 5px 0;
+    -ms-grid-columns: 40px;
+        grid-template-columns: 40px;
+    grid-column-gap: 0;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_add .friends_add {
+    padding: 0;
+    margin: 5px 0;
+    -ms-grid-columns: 40px;
+        grid-template-columns: 40px;
+    grid-column-gap: 0;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_img img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_img {
+    border: 1px solid #6358dc;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_img {
+    border: 1px solid #6358dc;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_name h1 {
+  font-size: 15px;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_name h1 {
+    font-size: 11px;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_name p {
+  font-size: 12px;
+  margin: 0;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_name p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_name {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_name {
+    display: none;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_btn button {
+  height: 25px;
+  width: 25px;
+  background: #2c9f45;
+  font-size: 20px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_btn {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_add .friends_add .friends_add_btn {
+    display: none;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_req p {
+  margin-bottom: 2px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req {
+    width: 40px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req {
+    width: 40px;
+    overflow: hidden;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_req .friends_req {
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto 60px;
+      grid-template-columns: 40px auto 60px;
+  grid-column-gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_req .friends_req:hover {
+  background: #e5e5e5;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req .friends_req {
+    -ms-grid-columns: 40px;
+        grid-template-columns: 40px;
+    grid-column-gap: 0;
+    padding: 0;
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req .friends_req {
+    -ms-grid-columns: 40px;
+        grid-template-columns: 40px;
+    grid-column-gap: 0;
+    padding: 0;
+    margin: 5px 0;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_img img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_img {
+    border: 1px solid #6358dc;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_img {
+    border: 1px solid #6358dc;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_name {
+  min-width: 0;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_name h1 {
+  font-size: 15px;
+}
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_name h1 {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_name {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_name {
+    display: none;
+  }
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_btn button {
+  height: 25px;
+  width: 25px;
+  background: #6358dc;
+  font-size: 20px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  margin-left: 5px;
+}
+
+#messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_btn button:nth-child(2) {
+  background: crimson;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_btn {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #messagebar .messagebar #messagesbar_scroll #friends_req .friends_req .friends_req_btn {
+    display: none;
+  }
+}
+
+#chatbar {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 70px auto 60px;
+      grid-template-rows: 70px auto 60px;
+}
+
+#chatbar #header {
+  -webkit-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.3);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 165px;
+      grid-template-columns: auto 165px;
+  grid-column-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+#chatbar #header .header__user {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60px auto;
+      grid-template-columns: 60px auto;
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #chatbar #header .header__user {
+    -ms-grid-columns: 40px auto;
+        grid-template-columns: 40px auto;
+  }
+}
+
+#chatbar #header .header__user img {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #chatbar #header .header__user img {
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+  }
+}
+
+#chatbar #header .header__user .header__user__details {
+  margin-left: 8px;
+}
+
+#chatbar #header .header__user .header__user__details h1 {
+  font-size: 16px;
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #chatbar #header .header__user .header__user__details h1 {
+    font-size: 12px;
+  }
+}
+
+#chatbar #header .header__user .header__user__details p {
+  font-size: 14px;
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  #chatbar #header .header__user .header__user__details p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  #chatbar #header .header__user .header__user__details {
+    display: none;
+  }
+}
+
+#chatbar #header .header__more {
+  text-align: right;
+}
+
+#chatbar #header .header__more button {
+  color: #6358dc;
+  background: none;
+  border: none;
+  font-size: 25px;
+  margin: 5px;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  line-height: 54px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: all 0.2 ease;
+  transition: all 0.2 ease;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#chatbar #header .header__more button:hover {
+  background: #e5e5e5;
+}
+
+#chatbar #messages {
+  background: none;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  overflow-y: scroll;
+}
+
+#chatbar #messages .messages .messages_box {
+  margin-top: 8px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+#chatbar #messages .messages .messages_box h6 {
+  position: absolute;
+  font-weight: 400;
+}
+
+#chatbar #messages .messages .messages_box .messages__text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-right: auto;
+}
+
+#chatbar #messages .messages .messages_box .messages__text img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#chatbar #messages .messages .messages_box .messages__text p {
+  margin-left: 8px;
+  padding: 5px 10px;
+  background: #e5e5e5;
+  font-size: 15px;
+  text-align: left;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#chatbar #messages .messages .messages_box .messages__text .chat_img {
+  width: 50%;
+  height: auto;
+  margin-left: 8px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#chatbar #footer {
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px auto 50px;
+      grid-template-columns: 50px auto 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#chatbar #footer .footer__files {
+  margin: 0 5px;
+  position: relative;
+}
+
+#chatbar #footer .footer__files button {
+  height: 35px;
+  width: 35px;
+  border: none;
+  color: #84bd00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#chatbar #footer .footer__files button:hover {
+  background: #e5e5e5;
+}
+
+#chatbar #footer .footer__files button svg {
+  font-size: 20px;
+}
+
+#chatbar #footer .footer__files .footer_file {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#chatbar #footer .footer__files .footer_file input {
+  max-width: 150px;
+}
+
+#chatbar #footer .footer__input {
+  background: #e5e5e5;
+  height: 35px;
+  display: -ms-grid;
+  display: grid;
+  z-index: 99;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+#chatbar #footer .footer__input input {
+  border: none;
+  background: transparent;
+  outline: none;
+  margin: 0 15px;
+  font-size: 15px;
+  min-width: 50px;
+}
+
+#chatbar #footer .footer__emoji {
+  margin: 0 5px;
+}
+
+#chatbar #footer .footer__emoji button {
+  height: 35px;
+  width: 35px;
+  border: none;
+  color: #84bd00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#chatbar #footer .footer__emoji button:hover {
+  background: #e5e5e5;
+}
+
+#chatbar #footer .footer__emoji button svg {
+  font-size: 20px;
+}
+/*# sourceMappingURL=main.css.map */

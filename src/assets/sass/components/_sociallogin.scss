@@ -1,0 +1,28 @@
+#social_login {
+  button {
+    margin: 15px 0;
+    background: $colorWhite;
+    color: $colorOffBlack;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    box-shadow: $boxShadow;
+    font-size: $fontSizeSm;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: $radiusCommon;
+    -webkit-border-radius: $radiusCommon;
+    -moz-border-radius: $radiusCommon;
+    -ms-border-radius: $radiusCommon;
+    -o-border-radius: $radiusCommon;
+    svg {
+      font-size: 25px;
+      &:last-child {
+        color: $colorBlue;
+      }
+    }
+  }
+}
