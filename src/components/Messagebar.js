@@ -331,7 +331,7 @@ const Messagebar = () => {
     // Group details control
     set(push(refer(db, "group/")), {
       groupName: groupName,
-      groupIcon: "https://www.iconpacks.net/icons/1/free-user-group-icon-296-thumb.png",
+      groupIcon: "https://cdn-icons-png.flaticon.com/512/166/166258.png",
       adminUid: auth.currentUser.uid,
       adminName: auth.currentUser.displayName,
       adminPhoto: auth.currentUser.photoURL,
@@ -398,7 +398,7 @@ const Messagebar = () => {
         {/* Header Bar */}
         <div className="messagesbar__header">
           <div className="messagesbar__header__user">
-            <img onClick={handleProfileSetting} src={pro ? "https://mahfuj.me/images/profile-2.jpeg" : auth.currentUser.photoURL} />
+            <img onClick={handleProfileSetting} src={pro ? "https://d32ogoqmya1dw8.cloudfront.net/images/serc/empty_user_icon_256.v2.png" : auth.currentUser.photoURL} />
             <div className="messagesbar__header__user__details">
               <h1>Chats</h1>
             </div>
@@ -563,7 +563,7 @@ const Messagebar = () => {
                                 </div>
                                 <div className="friends_add_name">
                                   <h1>{memData.name}</h1>
-                                  <p>Added by admin</p>
+                                  <p>Added by Admin</p>
                                 </div>
                                 <div className="friends_add_btn"></div>
                               </div>
